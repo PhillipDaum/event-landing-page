@@ -44,6 +44,11 @@ body {
     min-height: 50vh;
   }
   
+  .jumbotron {
+    background-image: url("https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-size: cover;
+  }
+
   footer {
     background-color: #001d24;
     height: 150px;

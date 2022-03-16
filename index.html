@@ -1,51 +1,58 @@
+<!-- make navbar look better, add photos behind stuff, fix border situtuation, fix bold text to in the same line
+Fix padding on bottom area-->
+
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Cool Website Thingy Stuff Yes</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Cool Website Thingy Stuff Yes</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="css/style.css"/>
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous">
 
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <!-- Bootstrap icon set -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  
+    <!-- My CSS stylesheet -->
+  <link rel="stylesheet" href="css/style.css"/>
 
-  </head>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <!-- Option 1: Bootstrap Bundle with Popper, the one I chose -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-  <body>
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-      <div class="container-fluid">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Active</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </nav>  
+</head>
 
-  <!-- jumbotron, need to center everything, vertically and horizonally, add a a default image, its full width tho -->  
-  <div class="container-fluid"></div>
-    <div class="row"></div>    
-     <div class="p-5 text-center bg-light">
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://images.pexels.com/photos/310175/pexels-photo-310175.png?auto=compress&cs=tinysrgb&h=650&w=940" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- jumbotron -->  
+  <div class="container-fluid">
+    <div class="row"> 
+    <div class="jumbotron p-5 text-center bg-light">
         <h1 class="display-5 fw-bold">Clear statement</h1>
         <p class="col">This thing is called a jumbotron. I think it is a funy name. The button below does nothing. The first three sentences were about what this stuff is. This sentence and the last one are just to add more words so theings look like they have more stuff in them.</p>
         <button class="btn btn-primary btn-lg" type="button">I am button. I do nothing.</button>
@@ -53,16 +60,15 @@
     </div>
   </div>
 
-  
-   <!-- second jumbotron sans button as a hack -->
-  <div class="container-fluid"></div>
-  <div class="row"></div>    
-   <div class="p-5 text-center bg-white">
-      <h1 class="display-5 fw-bold">The Speakers</h1>
-      <p class="col">I promise that this is not a jumbotron.</p>
+  <!-- second area "the speakers" -->
+  <div class="container-fluid align-items-center">
+    <div class="row">
+      <div class="p-5 text-center bg-white">
+          <h1 class="display-5 fw-bold">The Speakers</h1>
+          <p class="col">They all look like the same guy, but they are actually just identicle triplets and one body double. And remember kids, smoking isn't healthy.</p>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- those four things-->
   <div class="container-fluid">
@@ -71,33 +77,74 @@
         <!-- img-->
         <img class="img-fluid rounded-1" 
             src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="a face of a person and stuff">
-        <p class="h4">Hansel Dudeguy</p>
+        <p class="h4 p-2">Hansel Dudeguy</p>
           <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
-        </div>
+      </div>
 
-        <div class="col text-center m-4">
-          <!-- img-->
-          <p class="h4">Hansel Dudeguy</p>
-            <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
-          </div>
+      <div class="col text-center m-4">
+        <!-- img-->
+        <img class="img-fluid rounded-1" 
+          src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="a face of a person and stuff">
+        <p class="h4 p-2">Hansel Dudeguy</p>
+          <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
+      </div>
 
-          <div class="col text-center m-4">
-            <!-- img-->
-            <p class="h4">Hansel Dudeguy</p>
-              <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
-            </div>
+      <div class="col text-center m-4">
+        <!-- img-->
+        <img class="img-fluid rounded-1" 
+        src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="a face of a person and stuff">
+        <p class="h4 p-2">Hansel Dudeguy</p>
+          <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
+      </div>
 
-            <div class="col text-center m-4">
-              <!-- img-->
-              <p class="h4">Hansel Dudeguy</p>
-                <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
-              </div>
-                
+      <div class="col text-center m-4">
+        <!-- img-->
+        <img class="img-fluid rounded-1" 
+      src="https://images.pexels.com/photos/1933873/pexels-photo-1933873.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="a face of a person and stuff">
+        <p class="h4 p-2">Hansel Dudeguy</p>
+          <p class="text-center">this is a guy from a story and he got baked up in an oven from this wich</p>
+      </div>       
     </div> 
   </div> 
-
-
   
-  </body>
+  <!-- jumbotron -->  
+  <div class="container-fluid" style="border:2px solid #cecece;">
+    <div class="row">   
+    <div class="p-5 text-center bg-light">
+        <h1 class="display-5 fw-bold">Buy this stuff up now yo.</h1>
+        <p class="col">Fer reals, buy this stuff up and buy all the websites up from Bitwise.</p>
+        <button class="btn btn-primary btn-lg" type="button">I am button. I do nothing.</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- row with info and google map on left picture on right -->
+  <div class="row">
+    <div class="col">
+      <div class="containter-fluid">
+        <h1 class="display-5 fw-bold p-5">This is da place.</h1>
+        <p class="fw-normal">It is in a place, that is not here, but it is in your mind. JK, its a real place. <strong>and this is bold cuz the example was.</strong></p>
+      </div>
+    <!-- Google map -->
+    <div class="ratio ratio-1x1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2829.0923905452237!2d-123.39102768425194!3d44.840051782892246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54c01e7c12ae5fbd%3A0xce615d5149c3ac77!2sTurning%20Earth%20Farms!5e0!3m2!1sen!2sus!4v1647116099469!5m2!1sen!2sus" style="border:0;" width=”100%” height=”100%”allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- Side image -->
+    </div>
+      <div class="col p-5">
+          <img src="https://images.pexels.com/photos/1146759/pexels-photo-1146759.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="img-fluid" alt="a tasty burger">
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bd-footer mt-5 bg-light">
+    <div class="container">
+        <i class="bi bi-reddit text-success"></i>
+        <i class="bi bi-github text-warning"></i>
+          <p class="mb-2" style="">Designed and built with all the love in the world by the <strong>Phil<strong> with the help of <strong>Bitwise, Robert, Ethan, et al.<strong></p>
+    </div>
+  </footer>
+
+</body>
 </html>
